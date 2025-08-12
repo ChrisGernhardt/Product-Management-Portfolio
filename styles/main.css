@@ -9,7 +9,7 @@ body {
 /* Navbar styles */
 
 .navbar {
-    background-color: #1E3A8A !important;
+    background-color: #346cbf !important;
     color: white !important;
     position: sticky;
     top: 0;
@@ -30,7 +30,7 @@ body {
 
 /* Footer styles */
 footer {
-    background-color: #1E3A8A; /* Dark footer */
+    background-color: #346cbf; /* Dark footer */
     color: white; /* White text for footer */
     padding: 20px 0; /* Padding for footer */
     text-align: center; /* Centered text */
