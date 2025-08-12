@@ -1,0 +1,72 @@
+/* Custom styles for the portfolio website */
+
+/* Override Bootstrap default styles here */
+body {
+    background-color: #f8f9fa; /* Light background */
+    color: #343a40; /* Dark text color */
+}
+
+/* Navbar styles */
+
+.navbar {
+    background-color: #1E3A8A !important;
+    color: white !important;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    justify-content: center; /* Center content horizontally */
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 2.5rem; /* Make title bigger */
+    margin: 0 auto; /* Center the brand */
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #1E3A8A; /* Dark footer */
+    color: white; /* White text for footer */
+    padding: 20px 0; /* Padding for footer */
+    text-align: center; /* Centered text */
+}
+
+/* Carousel arrow color customization */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #1E3A8A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon:after {
+    content: '';
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-top: 0.3rem solid white;
+    border-left: 0.3rem solid white;
+    transform: rotate(-45deg);
+    margin-left: 0.5rem;
+}
+
+.carousel-control-next-icon:after {
+    content: '';
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-top: 0.3rem solid white;
+    border-right: 0.3rem solid white;
+    transform: rotate(45deg);
+    margin-right: 0.5rem;
+}
