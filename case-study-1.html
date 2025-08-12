@@ -12,11 +12,9 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-dark" style="background-color: #1E3A8A;">
       <div class="container">
-        <a class="navbar-brand" href="index.html"
-          >Christof Gernhardt - Product Manager</a
-        >
+        <a class="navbar-brand text-wrap w-100 text-center" href="index.html" style="white-space:normal;">Christof Gernhardt - Product Manager</a>
       </div>
     </nav>
 
@@ -58,7 +56,6 @@
         </div>
         <div class="col-lg-5">
           <div class="card bg-light text-center p-3">
-            <strong>Hero Visual Placeholder</strong><br />
             <img
               src="images/1 Hero Visual Placeholder_Hero Image.png"
               alt="Hero Image"
@@ -131,16 +128,17 @@
               <li>Problem framing & PRD synthesis.</li>
             </ul>
             <h3 class="mt-4">Key Findings</h3>
+            <p>Participants could select several options</p>
             <div class="mb-3">
               <div class="mb-2">
-                Arrived wrong location (once/twice)
+                Arrived at wrong location (once or twice)
                 <span class="float-right">43.8%</span>
                 <div class="progress">
                   <div class="progress-bar bg-info" style="width: 43.8%"></div>
                 </div>
               </div>
               <div class="mb-2">
-                Arrived wrong location (multiple)
+                Arrived wrong location (multiple times)
                 <span class="float-right">18.8%</span>
                 <div class="progress">
                   <div class="progress-bar bg-info" style="width: 18.8%"></div>
@@ -153,7 +151,7 @@
                 </div>
               </div>
               <div class="mb-2">
-                Guess & hope <span class="float-right">25%</span>
+                Guess & hope for the best <span class="float-right">25%</span>
                 <div class="progress">
                   <div class="progress-bar bg-info" style="width: 25%"></div>
                 </div>
@@ -260,7 +258,7 @@
               Based on research, I worked with design and engineering to ideate
               and prioritize solutions. We chose to focus on an MVP that could
               be delivered in two sprints, balancing impact and effort. The team
-              decided to postpone advanced features like ML recommendations to
+              decided to postpone advanced features like Machine Learning recommendations to
               future iterations, prioritizing core detection and flagging for
               launch.
             </p>
@@ -296,7 +294,7 @@
             </div>
             <p class="mt-3">
               <strong>Challenge:</strong> Scoping the MVP required tough
-              trade-offs, such as deferring ML-powered personalization and
+              trade-offs, such as deferring Machine Learning-powered personalization and
               manual flagging to ensure timely delivery.
             </p>
           </div>
@@ -561,7 +559,7 @@
                 <ul class="list-unstyled">
                   <li class="mb-2"><span class="badge badge-success mr-2">→</span> Conduct usability testing with clickable prototypes.</li>
                   <li class="mb-2"><span class="badge badge-success mr-2">→</span> Validate accuracy improvements with live user data.</li>
-                  <li><span class="badge badge-success mr-2">→</span> Explore ML models for personalized suggestions.</li>
+                  <li><span class="badge badge-success mr-2">→</span> Explore Machine Learning models for personalized suggestions.</li>
                 </ul>
               </div>
             </div>
@@ -635,5 +633,43 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add Bootstrap modals for zooming images -->
+<div class="modal fade" id="zoomModal" tabindex="-1" role="dialog" aria-labelledby="zoomModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body text-center p-0">
+        <img id="zoomedImg" src="" alt="Zoomed" class="img-fluid rounded shadow-lg" style="max-height:95vh; max-width:98vw;">
+        <h5 id="zoomedCaption" class="mt-3 text-light"></h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Zoom modal logic for user stories and wireframes only
+function showZoomModal(imgSrc, caption) {
+  document.getElementById('zoomedImg').src = imgSrc;
+  document.getElementById('zoomedCaption').textContent = caption || '';
+  $('#zoomModal').modal('show');
+}
+$(document).ready(function() {
+  // User stories
+  $('#personaCarousel .carousel-item img').each(function(idx, el) {
+    var captions = ['Delivery Driver', 'Passionate Teacher', 'Newcomer to Town', 'Influencer'];
+    $(el).css('cursor', 'zoom-in').on('click', function() {
+      showZoomModal(el.src, captions[idx]);
+    });
+  });
+  // Wireframes
+  $('#wireframeCarousel .carousel-item img').each(function(idx, el) {
+    var captions = ['Wireframes 1-2', 'Wireframes 3-4'];
+    $(el).css('cursor', 'zoom-in').on('click', function() {
+      showZoomModal(el.src, captions[idx]);
+    });
+  });
+  // Project files thumbnails no longer zoom
+});
+</script>
   </body>
 </html>
