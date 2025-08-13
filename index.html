@@ -18,76 +18,118 @@
     </nav>
 
     <main class="container py-5">
-      <section id="introduction" class="mb-5 pb-3">
-        <h2 class="mb-4">Introduction</h2>
-        <p class="mb-3">
-          Hi, I’m Chris Gernhardt — a Product Manager driven by a passion for
-          solving real user problems and delivering measurable business impact.
-          I thrive at the intersection of strategy, design, and technology,
-          leading cross-functional teams to turn ideas into products that users
-          love.
-        </p>
-        <p>
-          In this portfolio, you will find featured case study that showcases my
-          approach to product discovery, research, agile delivery, and
-          metrics-driven iteration. This project highlights my ability to
-          translate insights into actionable solutions while keeping both user
-          needs and business goals in focus.
-        </p>
+  <section id="about-me" class="mb-5 pb-3" style="background: #7b99d3; border-radius: 12px;">
+        <div class="d-flex flex-column align-items-center py-5">
+          <img src="images/Christof Gernhardt.jpeg" alt="Christof Gernhardt Profile" class="rounded-circle shadow mb-4" style="width: 180px; height: 180px; object-fit: cover;">
+          <h1 class="text-white mb-3" style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 2.5rem; font-weight: 600;">Christof Gernhardt</h1>
+          <h2 class="text-white mb-4" style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 1.5rem; font-weight: 400;">Product Manager & Data Insights Specialist based in Berlin</h2>
+          <p class="text-white mb-4 text-center" style="font-size: 1.25rem; max-width: 700px; font-family: 'Segoe UI', Arial, sans-serif;">
+            Passionate about solving real user problems and delivering measurable business impact. I thrive at the intersection of strategy, design, and technology, leading cross-functional teams to turn ideas into products that users love.<br>
+            My experience spans product management and data insights, with a focus on actionable insights, stakeholder alignment, and agile delivery. I enjoy collaborating with diverse teams to build products that make a difference for users and businesses alike.
+          </p>
+          <a href="assets/Christof-Gernhardt-Resume.pdf" download class="btn btn-light btn-lg mt-3 d-flex align-items-center" style="font-weight: 500;">
+            <i class="fa fa-download mr-2" aria-hidden="true" style="font-size: 1.5rem;"></i>
+            Download Resume
+          </a>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var resumeBtn = document.querySelector('a[href="assets/Christof-Gernhardt-Resume.pdf"]');
+              if (resumeBtn) {
+                resumeBtn.removeAttribute('download');
+                resumeBtn.setAttribute('target', '_blank');
+                resumeBtn.setAttribute('rel', 'noopener');
+              }
+            });
+          </script>
+        </div>
       </section>
 
-      <section id="case-study" class="mb-5 pb-3">
-        <h2 class="mb-4">Featured Case Study</h2>
-        <div class="row align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0 text-center">
-            <img
-              src="images/1 Hero Visual Placeholder_Hero Image.png"
-              class="img-fluid rounded shadow"
-              alt="Hero Visual – MakeYourMap SAF"
-              style="max-width: 80%"
-            />
-          </div>
-          <div class="col-md-6">
-            <p class="mb-3">
-              The MakeYourMap (MYM) project focused on improving navigation
-              accuracy by detecting and flagging duplicate or similar street
-              names during address search. In dense urban environments, users
-              often navigate to the wrong location because of ambiguous
-              addresses, causing delays, frustration, and reduced trust in the
-              platform. The goal was to design a feature that would reduce
-              navigation errors by at least 30% and ensure ≥90% correct address
-              selection when flags were shown.
-            </p>
-            <a href="case-study-1.html" class="btn btn-success mt-2"
-              >Read Full Case Study</a
-            >
+  <!-- Featured Case Studies section removed -->
+      </section>
+
+  <!-- Featured case study removed; added to carousel below -->
+
+    <section id="project-phases" class="mb-5 pb-3">
+      <h2 class="mb-4 text-center">Product Management Projects</h2>
+      <div class="mb-4 p-4 bg-light rounded shadow-sm border">
+        <p class="lead mb-3 text-center">
+          <strong>My product management work centers on defining strategy, aligning stakeholders, and delivering solutions through agile methodologies. I focus on turning user needs and business goals into actionable product outcomes.</strong>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow">
+            <img src="images/1 Hero Visual Placeholder_Hero Image.png" class="card-img-top" alt="MakeYourMap">
+            <div class="card-body">
+              <h5 class="card-title">MakeYourMap</h5>
+              <p class="card-text">Improving navigation accuracy by detecting and flagging duplicate or similar street names during address search. Includes research, user interviews, feature design, PRDs, MVP backlog, wireframes, and survey analysis.</p>
+              <a href="make-your-map.html" class="btn btn-primary">View Project</a>
+            </div>
           </div>
         </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow">
+            <img src="images/2.3 User Persona 4_Influencer.png" class="card-img-top" alt="Sync Video Platform">
+            <div class="card-body">
+              <h5 class="card-title">Sync Video Platform</h5>
+              <p class="card-text">A collaborative video platform designed for remote teams to share, annotate, and discuss video content in real time. Focused on seamless user experience, stakeholder alignment, and agile delivery.</p>
+              <a href="sync-video-platform.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <h2 class="mb-4 text-center mt-5">Data Insights</h2>
+          <div class="mb-4 p-4 bg-light rounded shadow-sm border">
+            <p class="lead mb-3 text-center">
+              <strong>My data insights work focuses on extracting actionable insights from research, metrics, and predictive modeling to drive better decisions and outcomes.</strong>
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="card h-100 shadow">
+                <img src="images/Survey analysis summary.png" class="card-img-top" alt="Influence Staffing Project">
+                <div class="card-body">
+                  <h5 class="card-title">Influence Staffing Project</h5>
+                  <p class="card-text">Analyzed staffing patterns and their impact on project outcomes. Used survey data, aggregation, and visualization to inform strategic staffing decisions and improve team performance.</p>
+                  <a href="influence-staffing.html" class="btn btn-primary">View Case Study</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card h-100 shadow">
+                <img src="images/MVP prioritized backlog.png" class="card-img-top" alt="FuturePlay: Predicting Game Sales">
+                <div class="card-body">
+                  <h5 class="card-title">FuturePlay: Predicting Game Sales</h5>
+                  <p class="card-text">Developed predictive models to forecast future game sales using historical data and advanced analytics. Provided actionable insights for marketing and product strategy.</p>
+                  <a href="futureplay-game-sales.html" class="btn btn-primary">View Case Study</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      </section>
       </section>
 
       <section id="contact" class="mb-5 pb-3">
         <h2 class="mb-4">Contact Me</h2>
-        <p class="mb-2">You can reach me directly via:</p>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-2">
-            <strong>Email:</strong>
-            <a href="mailto:christof.gernhardt@gmail.com"
-              >christof.gernhardt@gmail.com</a
-            >
-          </li>
-          <li>
-            <strong>LinkedIn:</strong>
-            <a
-              href="https://www.linkedin.com/in/christof-gernhardt-6a406321/"
-              target="_blank"
-              >Christof Gernhardt</a
-            >
-          </li>
-        </ul>
+        <p class="mb-3">Feel free to reach out via email or connect on LinkedIn:</p>
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="mailto:christof.gernhardt@gmail.com" class="mx-3" title="Email" style="color: #346cbf;">
+            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/christof-gernhardt-6a406321/" target="_blank" class="mx-3" title="LinkedIn" style="color: #0077b5;">
+            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
       </section>
     </main>
 
     <footer class="text-center py-4">
+      <div class="mb-3"></div>
+      <div class="text-center mb-3">
+  <a href="https://app.websitepolicies.com/policies/view/raugx8z8" target="_blank" rel="noopener" style="color: #fff; font-weight: 600; text-decoration: underline;">Impressum</a>
+      </div>
       <p>&copy; 2025 Chris Gernhardt Portfolio. All rights reserved.</p>
     </footer>
 
@@ -95,5 +137,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </body>
 </html>
