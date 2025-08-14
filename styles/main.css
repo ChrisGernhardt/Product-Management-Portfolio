@@ -96,16 +96,28 @@ footer {
     color: #346cbf !important;
 }
 
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none;
     width: 2.5rem;
     height: 2.5rem;
     background-color: #1E3A8A;
-    border-radius: 50%;
+    border-radius: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.carousel-control-prev-icon::before {
+  content: '\2190'; /* Left arrow */
+  font-size: 2rem;
+  color: black;
+}
+.carousel-control-next-icon::before {
+  content: '\2192'; /* Right arrow */
+  font-size: 2rem;
+  color: black;
 }
 
 .custom-linkedin-link {
