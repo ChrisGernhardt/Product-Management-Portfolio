@@ -4,39 +4,98 @@
 body {
     background-color: #f8f9fa; /* Light background */
     color: #343a40; /* Dark text color */
+    padding-top: 70px; /* Prevent content overlap with fixed navbar */
 }
 
 /* Navbar styles */
+/* Standardize navbar font size for all pages */
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+}
 
 .navbar {
     background-color: #346cbf !important;
+    position: fixed; /* Make navbar fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050; /* Ensure navbar is above other content */
+    box-shadow: 0 2px 8px rgba(52,108,191,0.08); /* Add shadow for depth */
+}
+
+/* Custom classes for moved inline styles */
+.custom-navbar-bg {
     color: white !important;
     position: sticky;
+}
+
+.custom-brand-wrap {
     top: 0;
     z-index: 1020;
-    justify-content: center; /* Center content horizontally */
+}
+
+.custom-about-bg {
+    border-radius: 0;
+    box-shadow: none;
+    background: #f8f9fa;
+}
+
+.custom-profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.custom-profile-img-wide {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #346cbf;
+    background: #fff;
+}
+
+.custom-profile-img-small {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #346cbf;
+    background: #fff;
 }
 
 .navbar-brand {
     color: white !important;
     font-weight: bold;
-    font-size: 2.5rem; /* Make title bigger */
-    margin: 0 auto; /* Center the brand */
-    text-align: center;
-    width: 100%;
-    letter-spacing: 2px;
+    font-size: 1.5rem; /* Standardized to match nav links */
 }
 
-
 /* Footer styles */
+.custom-about-desc {
+    font-size: 1.25rem;
+    max-width: 700px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.custom-about-desc-wide {
+    font-size: 1.15rem;
+    color: #222;
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem 2rem;
+    box-shadow: 0 1px 8px rgba(52,108,191,0.06);
+}
+
 footer {
     background-color: #346cbf; /* Dark footer */
     color: white; /* White text for footer */
     padding: 20px 0; /* Padding for footer */
-    text-align: center; /* Centered text */
+    text-align: center;
 }
 
 /* Carousel arrow color customization */
+.custom-email-link {
+    color: #346cbf !important;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none;
@@ -49,24 +108,117 @@ footer {
     justify-content: center;
 }
 
-.carousel-control-prev-icon:after {
-    content: '';
-    display: block;
-    width: 1.2rem;
-    height: 1.2rem;
-    border-top: 0.3rem solid white;
-    border-left: 0.3rem solid white;
-    transform: rotate(-45deg);
-    margin-left: 0.5rem;
+.custom-linkedin-link {
+    color: #0077b5 !important;
 }
 
-.carousel-control-next-icon:after {
-    content: '';
-    display: block;
-    width: 1.2rem;
-    height: 1.2rem;
-    border-top: 0.3rem solid white;
-    border-right: 0.3rem solid white;
-    transform: rotate(45deg);
-    margin-right: 0.5rem;
+.custom-impressum-link {
+    color: #fff !important;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.custom-contact-section {
+    min-height: 40vh;
+}
+
+.custom-contact-card {
+    max-width: 500px;
+    width: 100%;
+}
+
+.custom-case-study-label {
+    letter-spacing: 0.12em;
+    font-size: 12px;
+}
+
+.custom-progress-43 {
+    width: 43.8%;
+}
+.custom-progress-18 {
+    width: 18.8%;
+}
+.custom-progress-81 {
+    width: 81.3%;
+}
+.custom-progress-25 {
+    width: 25%;
+}
+
+.custom-zoomed-img {
+    max-height: 95vh;
+    max-width: 98vw;
+}
+
+.custom-download-icon {
+    font-size: 1.5rem;
+}
+
+/* About Me Section Styles */
+.custom-main-heading-visible {
+  color: #346cbf;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.custom-sub-heading-visible {
+  color: #346cbf;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.custom-about-desc-visible {
+  color: #222;
+  font-size: 1.1rem;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 8px rgba(52,108,191,0.06);
+}
+
+.navbar-contact-link {
+  font-weight: 500;
+}
+
+/* Navbar icon styles for visibility */
+.navbar .custom-email-link,
+.navbar .custom-linkedin-link,
+.navbar .custom-resume-btn {
+  color: #fff !important;
+  background: #346cbf;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  box-shadow: 0 2px 8px rgba(52,108,191,0.12);
+  transition: background 0.2s, color 0.2s;
+}
+.navbar .custom-email-link:hover,
+.navbar .custom-linkedin-link:hover,
+.navbar .custom-resume-btn:hover {
+  background: #fff;
+  color: #346cbf !important;
+  text-decoration: none;
+}
+.navbar .fa-lg {
+  font-size: 1.5rem;
+}
+
+/* Navbar profile and title styles */
+.navbar-profile-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  background: #346cbf;
+}
+.navbar-profile-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar-profile-title {
+  font-size: 0.95rem;
+  color: #e3eafc;
 }

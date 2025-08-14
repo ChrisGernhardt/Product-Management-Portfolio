@@ -1,228 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GameSales Insights: Forecasting Success – Case Study</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="styles/main.css" />
-</head>
-<body>
-  <nav class="navbar navbar-dark" style="background-color: #346cbf;">
-    <div class="container">
-      <a class="navbar-brand text-wrap w-100 text-center" href="index.html" style="white-space:normal;">Christof Gernhardt - Data Analytics</a>
-    </div>
-  </nav>
-  <main class="container py-5">
-    <!-- Hero Section -->
-    <section class="row align-items-center mb-5">
-      <div class="col-lg-7 mb-4 mb-lg-0">
-        <span class="text-uppercase text-muted font-weight-bold" style="letter-spacing: 0.12em; font-size: 12px">Case Study</span>
-  <h1 class="display-4 mt-2">GameSales Insights: Forecasting Success</h1>
-  <p class="lead">Leveraging historical sales data and advanced analytics to forecast future game sales, supporting strategic marketing and product decisions.</p>
-        <div class="mb-2">
-          <span class="badge badge-secondary mr-2">Role: Data Analyst</span>
-          <span class="badge badge-secondary mr-2">Timeline: Mar–Apr 2025</span>
-          <span class="badge badge-secondary">Methods: Regression · ML · Visualization</span>
-        </div>
-        <div class="mt-3">
-          <a class="btn btn-outline-primary mr-2" href="#solution">Jump to Solution</a>
-          <a class="btn btn-outline-primary" href="#research">See Research</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FuturePlay Game Sales – Case Study</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark custom-navbar-bg">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand custom-brand-wrap" href="index.html">Christof Gernhardt - Data Analytics</a>
+        <div class="navbar-nav flex-row">
+  <a class="nav-item nav-link mx-2" href="index.html#product-management-projects">Product Management</a>
+  <a class="nav-item nav-link mx-2" href="index.html#data-insights">Data Insights</a>
+  <a class="nav-item nav-link mx-2" href="index.html#contact-me">Contact Me</a>
         </div>
       </div>
-      <div class="col-lg-5">
-        <div class="card bg-light text-center p-3">
-          <img src="images/MVP prioritized backlog.png" alt="GameSales Insights Dashboard" class="img-fluid rounded mt-2" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Problem & Objective -->
-    <section class="row mb-5">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <div class="card h-100 p-4">
-          <h2>The Problem</h2>
-          <p>
-            Game publishers lacked reliable sales forecasts, leading to suboptimal marketing spend and product launches. Fragmented data and underutilized historical trends limited strategic planning.
-          </p>
-          <blockquote class="blockquote text-muted">“How can we use our data to predict future sales and optimize our strategy?”</blockquote>
-          <div class="mt-2">
-            <span class="badge badge-info mr-2">High impact</span>
-            <span class="badge badge-info">Advanced analytics</span>
-          </div>
-          <p class="mt-3"><strong>Challenge:</strong> Aggregating, cleaning, and modeling large datasets for actionable predictions.</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card h-100 p-4">
-          <h2>Objective</h2>
-          <ul>
-            <li><strong>Forecast</strong> future game sales with high accuracy</li>
-            <li><strong>Visualize</strong> predictions and key drivers for stakeholders</li>
-            <li><strong>Deliver</strong> actionable recommendations for marketing and product teams</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Research & Approach -->
-    <section id="research" class="card mb-5 p-4">
-      <h2>Research & Approach</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Data Sources</h3>
-          <ul>
-            <li>Historical game sales data</li>
-            <li>MVP prioritized backlog (<a href="assets/MVP prioritized backlog.pdf" target="_blank">PDF</a>)</li>
-            <li>PRD documents (<a href="assets/PRD (v1–v3).pdf" target="_blank">PDF</a>)</li>
-            <li>Research plan, survey & interview questions (<a href="assets/Research plan, survey & interview questions.pdf" target="_blank">PDF</a>)</li>
-            <li>Survey analysis summary (<a href="assets/Survey analysis summary.pdf" target="_blank">PDF</a>)</li>
-            <li>Wireframes (<a href="assets/Wireframes.pdf" target="_blank">PDF</a>)</li>
-          </ul>
-          <h3 class="mt-4">Methods</h3>
-          <ul>
-            <li>Data cleaning and aggregation</li>
-            <li>Regression and machine learning modeling</li>
-            <li>Stakeholder interviews and survey analysis</li>
-            <li>Dashboard and wireframe design</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h3>Key Steps</h3>
-          <ol>
-            <li>Explored and validated raw data</li>
-            <li>Identified trends, outliers, and relationships</li>
-            <li>Prepared and aggregated data for modeling</li>
-            <li>Built predictive models and visualized results</li>
-            <li>Formulated insights and recommendations</li>
-            <li>Delivered data-driven storytelling to stakeholders</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- Solution -->
-    <section id="solution" class="row mb-5">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <div class="card h-100 p-4">
-          <h2>Solution: Predictive Sales Dashboard</h2>
-          <p>
-            Built a predictive dashboard using regression and ML models. Visualized forecasts and key drivers for stakeholders. Provided recommendations for marketing and product teams.
-          </p>
-          <ul>
-            <li><strong>Aggregate</strong> and clean sales data</li>
-            <li><strong>Model</strong> future sales using advanced analytics</li>
-            <li><strong>Visualize</strong> predictions and key drivers for decision-makers</li>
-            <li><strong>Recommend</strong> actions for marketing and product strategy</li>
-          </ul>
-          <div class="row mt-3">
-            <div class="col-6">
-              <div class="card p-2 text-center">
-                <span class="text-muted">Model accuracy</span><br /><strong>≥92%</strong>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="card p-2 text-center">
-                <span class="text-muted">Effort</span><br /><strong>~60 hrs</strong>
-              </div>
-            </div>
-          </div>
-          <p class="mt-3"><strong>Challenge:</strong> Ensuring dashboard usability and actionable recommendations for all teams.</p>
-        </div>
-      </div>
-      <div class="col-md-6 d-flex align-items-center">
-        <div class="card h-100 p-4 text-center bg-light">
-          <h3 class="mb-3">Dashboard Visuals</h3>
-          <img src="images/MVP prioritized backlog.png" class="d-block w-100 img-fluid rounded shadow-sm" alt="Dashboard" />
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Results & Learnings -->
-    <section class="card mb-5 p-4">
-      <h2>Results & Learnings</h2>
-      <p>Stakeholder feedback confirmed:</p>
-      <ul>
-        <li>Forecasts supported marketing and product decisions</li>
-        <li>Stakeholders gained confidence in data-driven planning</li>
-        <li>Resource allocation and campaign targeting improved</li>
-        <li>Early feedback and iterative design were critical</li>
-      </ul>
-      <div class="row">
+    </nav>
+    <main class="container py-5">
+      <!-- Hero Section as paired cards -->
+      <div class="row mb-5">
         <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow-sm border-success">
-            <div class="card-body">
-              <h5 class="card-title mb-3"><span class="badge badge-success">Stakeholder Feedback</span></h5>
-              <ul class="list-unstyled">
-                <li class="mb-2"><span class="badge badge-info mr-2">✔</span> Dashboard usability rated highly by users.</li>
-                <li class="mb-2"><span class="badge badge-info mr-2">✔</span> Visualizations provided strong storytelling value.</li>
-                <li><span class="badge badge-info mr-2">✔</span> Actionable recommendations were implemented in campaigns.</li>
+          <div class="card h-100">
+            <div class="card-header bg-primary text-white d-flex align-items-center justify-content-between">
+              <span><strong>FuturePlay Game Sales</strong></span>
+              <span class="badge badge-light text-primary">Case Study</span>
+            </div>
+            <div class="card-body py-4">
+              <h5 class="card-title mb-3"><span class="badge badge-info">Overview</span></h5>
+              <p class="card-text mb-2">Leveraging historical sales data and advanced analytics to forecast future game sales, supporting strategic marketing and product decisions. This project combined regression, ML, and dashboard visualizations to deliver actionable insights for stakeholders.</p>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">🧑‍💻 <strong>Role:</strong> Data Analyst</li>
+                <li class="list-group-item">📅 <strong>Timeline:</strong> Mar–Apr 2025</li>
+                <li class="list-group-item">🛠️ <strong>Methods:</strong> Regression · ML · Visualization</li>
+              </ul>
+              <div class="mt-3">
+                <a class="btn btn-outline-primary mr-2" href="#solution">Jump to Solution</a>
+                <a class="btn btn-outline-primary" href="#research">See Research</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 bg-light text-center p-3">
+            <img src="images/MVP prioritized backlog.png" alt="GameSales Insights Dashboard" class="img-fluid rounded mt-2" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem & Objective as paired cards -->
+      <div class="row mb-5">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-danger text-white d-flex align-items-center justify-content-between">
+              <span><strong>Problem</strong></span>
+              <span class="badge badge-light text-danger">Challenge</span>
+            </div>
+            <div class="card-body py-4">
+              <h5 class="card-title mb-3"><span class="badge badge-danger">Forecasting Challenges</span></h5>
+              <p class="card-text mb-2">Game publishers lacked reliable sales forecasts, leading to suboptimal marketing spend and product launches. Fragmented data and underutilized historical trends limited strategic planning. The absence of a unified dashboard and actionable insights made it difficult to optimize strategy and resource allocation.</p>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">🔎 <strong>Identify</strong> gaps in historical sales and marketing data</li>
+                <li class="list-group-item">📝 <strong>Survey</strong> teams and stakeholders to uncover forecasting needs</li>
+                <li class="list-group-item">💡 <strong>Deliver</strong> actionable recommendations and predictive dashboards</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow-sm border-primary">
-            <div class="card-body">
-              <h5 class="card-title mb-3"><span class="badge badge-primary">Key Learnings</span></h5>
-              <ul class="list-unstyled">
-                <li class="mb-2"><span class="badge badge-warning mr-2">★</span> Early stakeholder feedback is critical for analytics projects.</li>
-                <li class="mb-2"><span class="badge badge-warning mr-2">★</span> Prioritization frameworks help clarify MVP scope.</li>
-                <li><span class="badge badge-warning mr-2">★</span> Future iterations could add real-time prediction APIs and campaign optimization analytics.</li>
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-success text-white d-flex align-items-center justify-content-between">
+              <span><strong>Objective</strong></span>
+              <span class="badge badge-light text-success">Goal</span>
+            </div>
+            <div class="card-body py-4">
+              <h5 class="card-title mb-3"><span class="badge badge-success">PRD & Research Plan</span></h5>
+              <p class="card-text mb-2">The Product Requirements Document (PRD) defined the scope and success metrics for a predictive dashboard. The research plan included stakeholder interviews, surveys, and analysis of historical data to clarify requirements and validate modeling approaches. The goal was to enable data-driven sales forecasting and strategic decision-making for marketing and product teams.</p>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">� <strong>PRD:</strong> Defined dashboard scope, MVP, and accuracy targets</li>
+                <li class="list-group-item">�️ <strong>Research Plan:</strong> Gathered insights from teams and historical data</li>
+                <li class="list-group-item">🎯 <strong>Objective:</strong> Enable high-accuracy sales forecasts and actionable recommendations</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Project Files -->
-    <section class="card mb-5 p-4">
-      <h2>Project Files</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/MVP prioritized backlog.png" class="card-img-top" alt="MVP Backlog Thumbnail">
-            <div class="card-body text-center">
-              <h5 class="card-title">MVP Prioritized Backlog</h5>
-              <a href="assets/MVP prioritized backlog.pdf" target="_blank" class="btn btn-outline-primary">View PDF</a>
+      <!-- Research & Approach as paired cards -->
+      <div class="row mb-5" id="research">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+        <div class="card-header bg-info text-white d-flex align-items-center justify-content-between">
+          <span><strong>Data Sources & Methods</strong></span>
+          <span class="badge badge-light text-info">Research</span>
+            </div>
+            <div class="card-body py-4">
+              <h5 class="card-title mb-3"><span class="badge badge-info">Sources</span></h5>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">📁 <strong>Historical game sales data</strong></li>
+                <li class="list-group-item">📝 <strong>MVP prioritized backlog</strong></li>
+                <li class="list-group-item">📄 <strong>PRD document</strong></li>
+                <li class="list-group-item">📝 <strong>Research plan, survey & interview questions</strong></li>
+                <li class="list-group-item">📊 <strong>Survey analysis summary</strong></li>
+                <li class="list-group-item">🖼️ <strong>Wireframes</strong></li>
+              </ul>
+              <h6 class="mt-4 mb-2">Methods</h6>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">🧹 Data cleaning, aggregation, and validation</li>
+                <li class="list-group-item">📈 Regression, ML modeling, and dashboard creation</li>
+                <li class="list-group-item">🗣️ Stakeholder interviews and survey analysis</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/Survey analysis summary.png" class="card-img-top" alt="Survey Thumbnail">
-            <div class="card-body text-center">
-              <h5 class="card-title">Survey Analysis Summary</h5>
-              <a href="assets/Survey analysis summary.pdf" target="_blank" class="btn btn-outline-primary">View PDF</a>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header bg-secondary text-white d-flex align-items-center justify-content-between">
+              <span><strong>Key Steps</strong></span>
+              <span class="badge badge-light text-secondary">Process</span>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/Wireframes.png" class="card-img-top" alt="Wireframes Thumbnail">
-            <div class="card-body text-center">
-              <h5 class="card-title">Wireframes</h5>
-              <a href="assets/Wireframes.pdf" target="_blank" class="btn btn-outline-primary">View PDF</a>
+            <div class="card-body py-4">
+              <h5 class="card-title mb-3"><span class="badge badge-secondary">Steps</span></h5>
+              <ol class="mb-2">
+                <li>Explored and validated raw data</li>
+                <li>Identified trends, outliers, and relationships</li>
+                <li>Aggregated and prepared data for modeling</li>
+                <li>Built predictive models and visualized results</li>
+                <li>Formulated insights and recommendations</li>
+                <li>Delivered data-driven storytelling to stakeholders</li>
+              </ol>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <a href="index.html" class="btn btn-outline-success mt-4">Back to Portfolio</a>
-  </main>
-  <footer class="text-center py-4">
+      <!-- Solution as paired cards -->
+      <div class="row mb-5" id="solution">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header bg-success text-white d-flex align-items-center justify-content-between">
+              <span><strong>Solution</strong></span>
+              <span class="badge badge-light text-success">Dashboard</span>
+            </div>
+            <div class="card-body py-4">
+              <h5 class="card-title mb-3"><span class="badge badge-success">Predictive Sales Dashboard</span></h5>
+              <p class="card-text mb-2">Built a predictive dashboard using regression and ML models. Visualized forecasts and key drivers for stakeholders. Provided recommendations for marketing and product teams.</p>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">📊 <strong>Aggregate</strong> and clean sales data</li>
+                <li class="list-group-item">📈 <strong>Model</strong> future sales using advanced analytics</li>
+                <li class="list-group-item">💡 <strong>Visualize</strong> predictions and key drivers for decision-makers</li>
+                <li class="list-group-item">🗣️ <strong>Recommend</strong> actions for marketing and product strategy</li>
+              </ul>
+              <div class="row mt-3">
+                <div class="col-6">
+                  <div class="card p-2 text-center">
+                    <span class="text-muted">Model accuracy</span><br /><strong>≥92%</strong>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card p-2 text-center">
+                    <span class="text-muted">Effort</span><br /><strong>~60 hrs</strong>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3"><strong>Challenge:</strong> Ensuring dashboard usability and actionable recommendations for all teams.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 d-flex align-items-center">
+          <div class="card h-100 p-4 text-center bg-light">
+            <h5 class="mb-3"><span class="badge badge-info">Dashboard Visuals</span></h5>
+            <div id="dashboardCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/MVP prioritized backlog.png" class="d-block w-100 img-fluid rounded shadow-sm dashboard-zoom" alt="Dashboard" onclick="showZoomModal('images/MVP prioritized backlog.png', 'MVP Prioritized Backlog')">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Survey analysis summary.png" class="d-block w-100 img-fluid rounded shadow-sm dashboard-zoom" alt="Survey" onclick="showZoomModal('images/Survey analysis summary.png', 'Survey Analysis Summary')">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Wireframes.png" class="d-block w-100 img-fluid rounded shadow-sm dashboard-zoom" alt="Wireframes" onclick="showZoomModal('images/Wireframes.png', 'Wireframes')">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#dashboardCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#dashboardCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results & Learnings as paired cards -->
+      <div class="row mb-5">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-success">
+            <div class="card-header bg-success text-white d-flex align-items-center justify-content-between">
+              <span><strong>Stakeholder Feedback</strong></span>
+              <span class="badge badge-light text-success">Results</span>
+            </div>
+            <div class="card-body py-4">
+              <h5 class="card-title mb-3"><span class="badge badge-success">Feedback</span></h5>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">✔️ Dashboard usability rated highly by users</li>
+                <li class="list-group-item">✔️ Visualizations provided strong storytelling value</li>
+                <li class="list-group-item">✔️ Actionable recommendations were implemented by teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-primary">
+            <div class="card-header bg-primary text-white d-flex align-items-center justify-content-between">
+              <span><strong>Key Learnings</strong></span>
+              <span class="badge badge-light text-primary">Insights</span>
+            </div>
+            <div class="card-body py-4">
+              <h5 class="card-title mb-3"><span class="badge badge-primary">Learnings</span></h5>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">★ Early stakeholder feedback is critical for analytics projects</li>
+                <li class="list-group-item">★ Prioritization frameworks help clarify MVP scope</li>
+                <li class="list-group-item">★ Future iterations could add real-time prediction APIs and campaign optimization analytics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Files -->
+      <section class="card mb-5 p-4">
+        <h2>Project Files</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">MVP Prioritized Backlog</h5>
+                <a href="assets/futureplay-game-sales/MVP prioritized backlog.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary">View PDF</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Survey Analysis Summary</h5>
+                <a href="assets/futureplay-game-sales/Survey analysis summary.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary">View PDF</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Wireframes</h5>
+                <a href="assets/futureplay-game-sales/Wireframes.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary">View PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">PRD Document</h5>
+                <a href="assets/futureplay-game-sales/PRD (v1–v3).pdf" target="_blank" rel="noopener" class="btn btn-outline-primary">View PDF</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Research Plan</h5>
+                <a href="assets/futureplay-game-sales/Research plan, survey & interview questions.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary">View PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a href="index.html" class="btn btn-outline-success mt-4">Back to Portfolio</a>
+      <!-- Contact Section -->
+      <!-- Image Zoom Modal -->
+      <div class="modal fade" id="zoomModal" tabindex="-1" role="dialog" aria-labelledby="zoomModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+          <div class="modal-content bg-transparent border-0">
+            <div class="modal-body text-center p-0">
+              <img id="zoomedImg" src="" alt="Zoomed" class="img-fluid rounded shadow-lg custom-zoomed-img">
+              <h5 id="zoomedCaption" class="mt-3 text-light"></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+      function showZoomModal(imgSrc, caption) {
+        document.getElementById('zoomedImg').src = imgSrc;
+        document.getElementById('zoomedCaption').textContent = caption || '';
+        $('#zoomModal').modal('show');
+      }
+      </script>
+    </main>
+    <footer class="text-center py-4">
       <div class="mb-3"></div>
       <div class="text-center mb-3">
-  <a href="https://app.websitepolicies.com/policies/view/raugx8z8" target="_blank" rel="noopener" style="color: #fff; font-weight: 600; text-decoration: underline;">Impressum</a>
+        <a href="https://app.websitepolicies.com/policies/view/raugx8z8" target="_blank" rel="noopener" class="custom-impressum-link">Impressum</a>
       </div>
       <p>&copy; 2025 Chris Gernhardt Portfolio. All rights reserved.</p>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="scripts/main.js"></script>
-</body>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
