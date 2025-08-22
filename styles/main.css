@@ -193,6 +193,21 @@ footer {
   font-weight: 500;
 }
 
+.navbar-profile-name {
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar-profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  background: #346cbf;
+}
+
+
 /* Navbar icon styles for visibility */
 .navbar .custom-email-link,
 .navbar .custom-linkedin-link,
@@ -217,20 +232,3 @@ footer {
   font-size: 1.5rem;
 }
 
-/* Navbar profile and title styles */
-.navbar-profile-img {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-  border: 2px solid #fff;
-  background: #346cbf;
-}
-.navbar-profile-name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #fff;
-}
-.navbar-profile-title {
-  font-size: 0.95rem;
-  color: #e3eafc;
-}
