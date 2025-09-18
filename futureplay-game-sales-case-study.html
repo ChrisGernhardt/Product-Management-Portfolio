@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FuturePlay: Predicting Game Sales – Case Study</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+      .case-section { max-width: 900px; margin: 32px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 32px; }
+      .case-title { font-size: 1.3em; font-weight: bold; margin-bottom: 4px; }
+      .case-subtitle { font-style: italic; color: #444; margin-bottom: 16px; }
+      .case-meta { margin-bottom: 18px; font-size: 0.98em; }
+      .case-meta strong { font-weight: bold; }
+      .case-section h4 { margin-top: 24px; margin-bottom: 8px; font-weight: bold; }
+      .case-section ul { margin: 8px 0 16px 24px; }
+      .case-section li { margin-bottom: 4px; }
+      .case-section .highlight { background: #e6fff2; color: #23608a; font-weight: bold; padding: 2px 8px; border-radius: 4px; }
+      .case-section .success { color: #28a745; font-weight: bold; }
+      .case-section .warning { color: #d9534f; font-weight: bold; }
+      .case-section .info { color: #23608a; font-weight: bold; }
+      .case-section .bulb { color: #ffc107; font-weight: bold; }
+      @media (max-width: 900px) { .case-section { padding: 16px; } }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-title">Christof Gernhardt - Product Management</div>
+    </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#contact">Contact Me</a>
+    </div>
+    <div class="case-section">
+      <div style="font-size:0.9em; color:#888; letter-spacing:1px; margin-bottom:10px;">CASE STUDY</div>
+      <div class="case-title">FuturePlay: Predicting Game Sales</div>
+      <div class="case-subtitle">Data Insights for Product Decisions</div>
+      <h4>📄 Case Study Snapshots</h4>
+      <ol>
+        <li>
+          <strong>Cleaning & Understanding the Dataset</strong><br>
+          <strong>Type:</strong> Data Analysis Training Project<br>
+          <strong>Problem:</strong> Raw VGChartz dataset contained missing years, inconsistent publisher entries, and retail-only bias.<br>
+          <strong>Approach:</strong> Cleaned the dataset (removed N/A and incomplete years), identified missing values, categorized variables, and documented limitations (no digital sales, no player demographics).<br>
+          <strong>Outcome:</strong> Produced a reliable dataset (16,598 rows, 11 columns) enabling meaningful sales trend analysis.<br>
+          <strong>Key Learning:</strong> A strong foundation in <span class="highlight">data structure & cleaning</span> is critical before deriving insights — just like preparing SaaS product analytics.
+        </li>
+        <li>
+          <strong>Aggregation & Summarization – Trends by Genre & Platform</strong><br>
+          <strong>Type:</strong> Data Analysis Training Project<br>
+          <strong>Problem:</strong> GameCo needed to know which genres, publishers, and platforms performed best by region.<br>
+          <strong>Approach:</strong> Built pivot tables, created combined genre categories (e.g., Action-Adventure), grouped platforms, and calculated regional sales shares.<br>
+          <strong>Outcome:</strong> Global retail game sales peaked in 2008, then declined (rise of digital). DS unexpectedly dominated in title count, PS4 overtook Xbox One. Regional genre differences: Shooters (NA), RPGs (JP).<br>
+          <strong>Key Learning:</strong> Aggregation reveals <span class="highlight">market inflection points</span> — directly applicable to product KPI trend analysis.
+        </li>
+        <li>
+          <strong>Approaches to Analysis – Framing the Right Questions</strong><br>
+          <strong>Type:</strong> Data Analysis Training Project<br>
+          <strong>Problem:</strong> GameCo stakeholders asked questions ranging from diagnosing sales drops to predicting Olympic-driven spikes.<br>
+          <strong>Approach:</strong> Matched questions to analysis types: Diagnostic → why puzzle sales fell. Prescriptive → stock allocation by city (demand vs. shipping cost). Descriptive → monthly sales behavior. Predictive → forecast sports game sales around Olympics.<br>
+          <strong>Outcome:</strong> Showed how <span class="highlight">analysis type must match business question</span>.<br>
+          <strong>Key Learning:</strong> Asking the right analytical question is the first step to actionable insights — same in product discovery.
+        </li>
+        <li>
+          <strong>Regional Market Shifts – Formulating Insights</strong><br>
+          <strong>Type:</strong> Data Analysis Training Project<br>
+          <strong>Problem:</strong> Needed to understand contributions of NA, EU, JP to global sales.<br>
+          <strong>Approach:</strong> Calculated regional shares, adjusted by population, visualized over time.<br>
+          <strong>Outcome:</strong> NA consistently over-indexed vs. population. Japan strong early adopter, Europe catching up later. Changing assumptions of "stable sales trends."<br>
+          <strong>Key Learning:</strong> Adjusting data (per capita, per active user) reframes insights — crucial for SaaS PMs making fair comparisons across markets.
+        </li>
+        <li>
+          <strong>Visualization for Insights – From Raw to Storytelling</strong><br>
+          <strong>Type:</strong> Data Analysis Training Project<br>
+          <strong>Problem:</strong> Large datasets risk hiding insights in raw numbers.<br>
+          <strong>Approach:</strong> Built box plots, stacked bar charts, and scatterplots.<br>
+          <strong>Outcome:</strong> Showed <span class="highlight">right-skewed sales distribution</span> (few blockbusters dominate). Confirmed shooters drive global sales through NA. Identified RPGs as Japan-heavy.<br>
+          <strong>Key Learning:</strong> Visualization transforms raw data into a story recruiters, executives, or stakeholders can grasp quickly.
+        </li>
+        <li>
+          <strong>Final Data Story & Presentation (GameCo 2017)</strong><br>
+          <strong>Type:</strong> Data Analysis Training Project – Final Deliverable<br>
+          <strong>Problem:</strong> GameCo assumed retail sales trends were stable, budgeting equally by region.<br>
+          <strong>Approach:</strong> Line charts & stacked columns (2011–2016) to track shifts.<br>
+          <strong>Outcome:</strong> NA share dropped 47% → 32%. EU overtook NA, rising to 38%. JP nearly doubled share (10% → 19%). Other regions steady at ~13%.<br>
+          <strong>Recommendation:</strong> Reallocate budget toward EU & JP, monitor NA decline, and start tracking digital sales data.<br>
+          <strong>Key Learning:</strong> Data-driven storytelling drives <span class="highlight">strategic decisions</span> — same principle in product roadmaps.
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

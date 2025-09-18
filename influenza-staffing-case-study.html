@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Influenza Staffing Project – Case Study</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+      .case-section { max-width: 900px; margin: 32px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 32px; }
+      .case-title { font-size: 1.3em; font-weight: bold; margin-bottom: 4px; }
+      .case-subtitle { font-style: italic; color: #444; margin-bottom: 16px; }
+      .case-meta { margin-bottom: 18px; font-size: 0.98em; }
+      .case-meta strong { font-weight: bold; }
+      .case-section h4 { margin-top: 24px; margin-bottom: 8px; font-weight: bold; }
+      .case-section ul { margin: 8px 0 16px 24px; }
+      .case-section li { margin-bottom: 4px; }
+      .case-section .highlight { background: #e6fff2; color: #23608a; font-weight: bold; padding: 2px 8px; border-radius: 4px; }
+      .case-section .success { color: #28a745; font-weight: bold; }
+      .case-section .warning { color: #d9534f; font-weight: bold; }
+      .case-section .info { color: #23608a; font-weight: bold; }
+      .case-section .bulb { color: #ffc107; font-weight: bold; }
+      @media (max-width: 900px) { .case-section { padding: 16px; } }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-title">Christof Gernhardt - Product Management</div>
+    </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#contact">Contact Me</a>
+    </div>
+    <div class="case-section">
+      <div style="font-size:0.9em; color:#888; letter-spacing:1px; margin-bottom:10px;">CASE STUDY</div>
+      <div class="case-title">Influenza Staffing Project</div>
+      <div class="case-subtitle">Using CDC and Census data to guide staffing allocation during flu season.</div>
+      <div class="case-meta">
+        <strong>Role:</strong> Data Analyst (CareerFoundry Training Project – Simulation)<br>
+        <strong>Timeline:</strong> 2025<br>
+        <strong>Methods:</strong> Data Profiling · Data Cleaning · Normalization · Statistical Analysis · Hypothesis Testing · Stakeholder Reporting
+      </div>
+      <h4>🔎 Case Study Snapshot</h4>
+      <div><strong>Type:</strong> CareerFoundry Training Project (Simulation)</div>
+      <div><strong>Problem:</strong> A U.S. medical staffing agency needed to predict where flu season would hit hardest, in order to deploy temporary staff efficiently across all 50 states.</div>
+      <div><strong>Objective:</strong> Build a data-informed staffing plan by analyzing historical influenza mortality data alongside population demographics.</div>
+      <div><strong>Approach:</strong> Identified data needs → acquired and cleaned CDC influenza mortality data & Census population estimates → normalized deaths per capita (65+) → tested hypotheses (age vs. mortality, vaccination impact, healthcare access).</div>
+      <div><strong>Outcome:</strong> Built combined dataset, validated assumptions, and delivered interim report with insights. Revealed that elderly population share alone was not a strong predictor of mortality, highlighting need to include vaccination rates, healthcare access, and regional differences.</div>
+      <h4>The Problem</h4>
+      <div>Every winter, influenza spikes increase hospital admissions. Staffing agencies must anticipate demand to avoid over- or under-staffing. The initial assumption: states with larger elderly populations would face higher mortality, requiring more staff.</div>
+      <h4>Research & Insights</h4>
+      <div><strong>Clarifying Questions:</strong> Which states are most affected? When does flu season start/end? Which populations are most vulnerable?</div>
+      <div><strong>Hypothesis Tested:</strong> States with a higher proportion of 65+ residents will have higher influenza mortality rates.</div>
+      <div><strong>Data Sources:</strong> CDC Influenza Death Records (2009–2017), U.S. Census Population Estimates (2009–2017)</div>
+      <div><strong>Key Insights:</strong></div>
+      <ul>
+        <li>No significant correlation between elderly share and state mortality rates.</li>
+        <li>Outlier states (e.g., Florida: large elderly population but low mortality) showed healthcare access and vaccination likely play a bigger role.</li>
+        <li>Moderate correlation (r = 0.46) between elderly population share and mortality, but not statistically significant (p = 0.17).</li>
+      </ul>
+      <h4>Solution: Normalized Mortality Analysis</h4>
+      <div>Combined CDC death counts with Census population by state/age.<br>Reaggregated bands (65–69, 70–74, etc.) into 65+ category.<br>Normalized deaths by state population to calculate <span class="highlight">mortality rate per capita (65+)</span>.<br>Tested with two-sample t-test: results showed no significant difference between high-elderly and low-elderly states.</div>
+      <h4>Outcome</h4>
+      <ul>
+        <li><span class="warning">🚫 Initial hypothesis not supported.</span> Elderly proportion alone is not a predictor.</li>
+        <li><span class="info">📊 Delivered interim report</span> with descriptive analysis, correlations, and hypothesis tests.</li>
+        <li><span class="bulb">💡 Shifted stakeholder focus toward <strong>vaccination rates, healthcare access, and regional health infrastructure</strong> as stronger drivers.</span></li>
+      </ul>
+      <h4>Results & Learnings</h4>
+      <ul>
+        <li><span class="success">✅ Proved ability to scope, clean, and integrate multiple datasets.</span></li>
+        <li><span class="success">✅ Demonstrated structured hypothesis testing (null vs. alternative, p-values, correlation).</span></li>
+        <li><span class="success">✅ Highlighted the importance of <strong>challenging assumptions</strong> with data.</span></li>
+        <li><strong>Key Learning:</strong> Demographics alone rarely explain outcomes. Product and staffing decisions must incorporate multiple drivers (access, infrastructure, prevention measures).</li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,3 +1,33 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+.header { background: #23608a; color: #fff; padding: 20px 0; display: flex; align-items: center; }
+.header-img { width: 80px; height: 80px; border-radius: 50%; margin: 0 30px; object-fit: cover; background: #fff; }
+.header-content { flex: 1; }
+.header-title { font-size: 1.3em; font-weight: bold; }
+.header-subtitle { font-size: 1em; margin-top: 5px; }
+.nav { background: #23608a; display: flex; justify-content: center; }
+.nav a { color: #fff; text-decoration: none; padding: 8px 18px; font-size: 1em; }
+.nav a:hover { background: #17496a; }
+.section { max-width: 900px; margin: 30px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 30px; }
+.section-title { text-align: center; font-size: 1.5em; font-weight: bold; margin-bottom: 18px; }
+.about-text { font-size: 1em; line-height: 1.7; margin-bottom: 18px; }
+.why-product { text-align: center; font-weight: bold; margin: 18px 0 8px; }
+.projects-title { text-align: center; font-weight: bold; margin: 30px 0 18px; }
+.projects-row { display: flex; gap: 20px; justify-content: center; margin-bottom: 20px; }
+.project-card { background: #f9f9f9; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); padding: 18px; width: 270px; display: flex; flex-direction: column; align-items: center; }
+.project-card img { width: 100%; border-radius: 6px; margin-bottom: 10px; }
+.project-title { font-weight: bold; font-size: 1.1em; margin-bottom: 6px; text-align: center; }
+.project-desc { font-size: 0.97em; margin-bottom: 10px; text-align: center; }
+.project-label { background: #ffe066; color: #333; font-size: 0.85em; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; display: inline-block; }
+.project-btn, .case-btn { background: #23608a; color: #fff; border: none; border-radius: 4px; padding: 7px 16px; font-size: 0.95em; cursor: pointer; text-decoration: none; margin-top: 6px; }
+.project-btn:hover, .case-btn:hover { background: #17496a; }
+.data-insights { background: #e6fff2; color: #23608a; font-weight: bold; text-align: center; padding: 8px; border-radius: 6px; margin: 30px 0 18px; }
+.contact-section { text-align: center; margin: 40px 0 0; }
+.contact-title { font-size: 1.2em; font-weight: bold; margin-bottom: 10px; }
+.contact-links { display: flex; justify-content: center; gap: 30px; margin: 18px 0; }
+.contact-link { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: #23608a; }
+.contact-link img { width: 32px; height: 32px; margin-bottom: 4px; }
+.footer { background: #23608a; color: #fff; text-align: center; padding: 10px 0; font-size: 1em; position: relative; bottom: 0; width: 100%; }
+@media (max-width: 900px) { .section { padding: 18px; } .projects-row { flex-direction: column; align-items: center; } .project-card { width: 95%; } }
 /* Custom styles for the portfolio website */
 
 /* Override Bootstrap default styles here */

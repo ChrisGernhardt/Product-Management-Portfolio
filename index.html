@@ -1,163 +1,147 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-dark custom-navbar-bg">
-      <div class="container d-flex justify-content-between align-items-center">
-          <div class="d-flex align-items-center">
-            <img src="images/Christof Gernhardt.jpeg" alt="Christof Gernhardt Profile" class="rounded-circle shadow mr-3 navbar-profile-img">
-            <div class="d-flex flex-column">
-              <span class="navbar-brand mb-0 navbar-profile-name">Christof Gernhardt</span>
-              <span class="navbar-profile-title">Product Manager & Data Insights Specialist</span>
-            </div>
-          </div>
-          <div class="navbar-nav flex-row">
-            <a class="nav-item nav-link mx-2" href="index.html#product-management-projects">Product Management</a>
-            <a class="nav-item nav-link mx-2" href="index.html#data-insights">Data Insights</a>
-            <a class="nav-item nav-link mx-2" href="index.html#contact-me">Contact Me</a>
-          </div>
-      </div>
-    </nav>
-
-    <main class="container py-5">
-  <section id="about-me" class="mb-5 pb-3 custom-about-bg">
-    <div class="row align-items-center py-5">
-      <div class="col-lg-12 d-flex flex-column justify-content-center">
-        <h2 class="mb-4 text-center">About Me</h2>
-        <p class="custom-about-desc-wide">
-          Passionate about solving real user problems and delivering measurable business impact. Based in Berlin, I thrive at the intersection of strategy, design, and technology, leading cross-functional teams to turn ideas into products that users love.<br><br>
-          My experience spans product management and data insights, with a focus on actionable insights, stakeholder alignment, and agile delivery. I enjoy collaborating with diverse teams to build products that make a difference for users and businesses alike.<br><br>
-          I believe in the power of clear communication, empathy, and data-driven decision making to create products that truly serve users and drive business growth.
-        </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christof Gernhardt | Product Management Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="header">
+    <img src="images/Christof%20Gernhardt.jpeg" alt="Christof Gernhardt" class="header-img">
+    <div class="header-content">
+  <a href="index.html" class="header-title" style="color:#fff;text-decoration:none;cursor:pointer;">Christof Gernhardt - Product Manager</a>
+      <div class="header-subtitle">Product Manager | SaaS &amp; Data-Driven Strategy</div>
+    </div>
+  </div>
+  <div class="nav">
+    <a href="#" id="pm-modal-trigger-nav">Product Management</a>
+    <a href="#data-insights">Data Insights</a>
+    <a href="#pm-playbook">My PM Playbook</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="section" id="about">
+    <div class="section-title">About Me</div>
+    <div class="about-text">
+      I'm a SaaS professional turned Product Manager, passionate about building products that solve real user problems and drive measurable business outcomes. Based in Berlin, I bring 10+ years of experience at the intersection of operations, strategy, and data, now fully dedicated to creating products that users love.<br><br>
+      What sets me apart is my ability to combine data insights with product strategy: I translate complex analysis into actionable decisions, align stakeholders around a clear vision, and deliver with agile execution. My background in SaaS gives me a deep understanding of how to scale products and balance user needs with business goals.<br><br>
+      I believe in clear communication, empathy, and evidence-based decision-making — creating products that not only serve users but also accelerate growth.
+    </div>
+    <div class="why-product">Why Product?</div>
+    <div class="about-text">
+      After years in SaaS, I realized my favorite part of the work wasn’t just running operations — it was shaping <b>what</b> we built and <b>why</b>. Transitioning into product management has allowed me to do exactly that: connect strategy, design, and technology to turn ideas into real solutions. My past roles gave me the analytical rigor and stakeholder management skills; product gives me the canvas to apply them with impact.
+    </div>
+  </div>
+  <div class="section" id="product-management">
+      <div class="section" style="background:#f9f9f9;color:#23608a;font-weight:bold;text-align:center;padding:18px;margin:30px auto 18px auto;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+  Product Management Training Projects
+</div>
         
+     <div class="about-text" style="text-align:center;">
+      My product management work centers on defining strategy, aligning stakeholders, and delivering solutions through agile methodologies. I focus on turning user needs and business goals into actionable product outcomes.
+    </div>
+    <div class="projects-row">
+      <div class="project-card">
+        <img src="images/make-your-map/1%20Hero%20Visual%20Placeholder_Hero%20Image.png" alt="MakeYourMap">
+        <div class="project-title">MYM: Make my Maps</div>
+        <div class="project-label">FEATURE: Similar Address</div>
+        <div class="project-desc">Improving product accuracy by detecting and flagging duplicate or similar entries during address search. Includes user interviews, feature design, PRD, MVP backlog, wireframes.</div>
+  <a href="make-your-map-case-study.html" class="project-btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/sync-video-platform/Hero Image Sync.png" alt="Sync Video Platform">
+        <div class="project-title">Sync Video Platform</div>
+        <div class="project-desc">A collaborative video platform designed for remote teams to share, annotate, and sync in real time. Focused on seamless user experience, stakeholder alignment, and agile delivery.</div>
+  <a href="sync-video-platform.html" class="project-btn">View Project</a>
       </div>
     </div>
-  </section>
-
-  <!-- Featured Case Studies section removed -->
-      </section>
-
-  <!-- Featured case study removed; added to carousel below -->
-
-    <section id="project-phases" class="mb-5 pb-3">
-  <h2 id="product-management-projects" class="mb-4 text-center">Product Management Projects</h2>
-      <div class="mb-4 p-4 bg-light rounded shadow-sm border">
-        <p class="lead mb-3 text-center">
-          <strong>My product management work centers on defining strategy, aligning stakeholders, and delivering solutions through agile methodologies. I focus on turning user needs and business goals into actionable product outcomes.</strong>
-        </p>
+  </div>
+  <div class="section">
+  <div class="section" style="background:#f9f9f9;color:#23608a;font-weight:bold;text-align:center;padding:18px;margin:0 auto 18px auto;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+      Data Insights for Product Decisions
+    </div>
+    <div class="about-text" style="text-align:center;">
+      Beyond SaaS and Product projects, I built a foundation in data analysis and storytelling. These projects show how I clean, analyze, and visualize data to guide business decisions — a skill I’ve applied in my real-world SaaS work, but I’m showcasing here in these CareerFoundry Training Projects
+    </div>
+    <div class="projects-row">
+      <div class="project-card">
+  <div class="project-title">Influenza Staffing Project</div>
+        <div class="project-desc">Analyzed staffing patterns and their impact on project outcomes. Used survey data, aggregation, and visualization to inform strategic staffing decisions and improve team performance.</div>
+        <a href="influenza-staffing-case-study.html" class="case-btn">View Case Study</a>
       </div>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow">
-            <a href="make-your-map.html">
-              <img src="images/make-your-map/1 Hero Visual Placeholder_Hero Image.png" class="card-img-top" alt="MakeYourMap">
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">MakeYourMap</h5>
-              <span class="badge badge-warning mb-2 featured-casestudy-badge">FEATURED CASE STUDY</span>
-              <p class="card-text">Improving navigation accuracy by detecting and flagging duplicate or similar street names during address search. Includes research, user interviews, feature design, PRDs, MVP backlog, wireframes, and survey analysis.</p>
-              <a href="make-your-map.html" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow">
-            <a href="sync-video-platform.html">
-              <img src="images/sync-video-platform/Hero Image Sync.png" class="card-img-top" alt="Sync Video Platform">
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">Sync Video Platform</h5>
-              <p class="card-text">A collaborative video platform designed for remote teams to share, annotate, and discuss video content in real time. Focused on seamless user experience, stakeholder alignment, and agile delivery.</p>
-              <a href="sync-video-platform.html" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
-        </div>
+      <div class="project-card">
+        <div class="project-title">FuturePlay: Predicting Game Sales</div>
+        <div class="project-desc">Developed predictive models to forecast future game sales using historical data and advanced analytics. Provided actionable insights for marketing and product strategy.</div>
+        <a href="futureplay-game-sales-case-study.html" class="case-btn">View Case Study</a>
       </div>
+    </div>
+  </div>
+  <div style="height:40px;"></div>
+  <div class="section contact-section" id="contact" style="margin-left:auto;margin-right:auto;">
+    <div class="contact-title">Contact Me</div>
+    <div>Feel free to download my resume, reach out via email, or connect on LinkedIn:</div>
+    <div class="contact-links">
+      <a class="contact-link" href="assets/Christof-Gernhardt-Resume.pdf" target="_blank">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23608a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h4"/></svg>
+        Resume
+      </a>
+      <a class="contact-link" href="mailto:your.email@example.com">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23608a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email
+      </a>
+      <a class="contact-link" href="https://www.linkedin.com/in/christofgernhardt/" target="_blank">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23608a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="7" y1="10" x2="7" y2="17"/><line x1="7" y1="7" x2="7" y2="7"/><line x1="12" y1="10" x2="12" y2="17"/><path d="M12 13a2 2 0 1 1 4 0v4"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <div style="margin-top:18px; font-size:0.98em; color:#23608a;">I'm open to Product Manager roles in SaaS and customer experience. Let's connect.</div>
+  </div>
+  <div class="footer"><a href="https://app.websitepolicies.com/policies/view/raugx8z8" target="_blank" style="color:#fff;text-decoration:underline;">Impressum</a>
+  </div>
+  <!-- Modal for Product Management Info -->
+  <div id="pm-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.18);z-index:1000;">
+  <div id="pm-modal-content" style="max-width:600px;margin:60px auto;background:#fff;border-radius:10px;box-shadow:0 2px 16px rgba(0,0,0,0.12);padding:32px 18px;position:relative;">
+    <button onclick="document.getElementById('pm-modal').style.display='none'" style="position:absolute;top:16px;right:18px;background:none;border:none;font-size:1.5em;cursor:pointer;color:#23608a;">&times;</button>
+    <div style="font-weight:bold;font-size:1.15em;text-align:center;margin-bottom:12px;">Real-World Product Impact</div>
+    <div style="height:8px;background:#f3f3f3;margin-bottom:18px;"></div>
+    <div style="margin-bottom:18px;text-align:center;">
+      <div style="font-weight:bold;">Miro – Onboarding & Learning MVP</div>
+      <div style="font-style:italic;font-size:0.98em;">Cut new-hire ramp-up time by 30% through discovery, backlog prioritization, and iterative MVP delivery.</div>
+      <a href="miro-onboarding-learning-case-study.html" target="_blank" style="display:inline-block;font-weight:bold;margin:10px 0 0 0;color:#fff;background:#23608a;padding:8px 22px;border-radius:5px;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.07);transition:background 0.2s;">View Case Study</a>
+    </div>
+    <div style="margin-bottom:18px;text-align:center;">
+      <div style="font-weight:bold;">Miro – Interview Training & Hiring Rubrics</div>
+      <div style="font-style:italic;font-size:0.98em;">Improved candidate experience and interview quality through global training rollout, redesigned scorecards, and technical rubrics.</div>
+      <a href="miro-interview-training-case-study.html" target="_blank" style="display:inline-block;font-weight:bold;margin:10px 0 0 0;color:#fff;background:#23608a;padding:8px 22px;border-radius:5px;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.07);transition:background 0.2s;">View Case Study</a>
+    </div>
+    <div style="margin-bottom:18px;text-align:center;">
+      <div style="font-weight:normal;">Doctolib – Support Data &rarr; Product Improvements</div>
+      <a href="doctolib-support-case-study.html" target="_blank" style="display:inline-block;font-weight:bold;margin:10px 0 0 0;color:#fff;background:#23608a;padding:8px 22px;border-radius:5px;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.07);transition:background 0.2s;">View Case Study</a>
+    </div>
+    <div style="height:8px;background:#f3f3f3;margin-top:12px;"></div>
+  </div>
+</div>
+  
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var triggerNav = document.getElementById('pm-modal-trigger-nav');
+    var modal = document.getElementById('pm-modal');
+    var modalContent = document.getElementById('pm-modal-content');
+    if (triggerNav && modal) {
+      triggerNav.onclick = function(e) {
+        e.preventDefault();
+        modal.style.display = 'block';
+      };
+      // Close modal when clicking outside content
+      modal.onclick = function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      };
+    }
+  });
+</script>
+</body>
 
-          <h2 id="data-insights" class="mb-4 text-center mt-5">Data Insights</h2>
-          <div class="mb-4 p-4 bg-light rounded shadow-sm border">
-            <p class="lead mb-3 text-center">
-              <strong>My data insights work focuses on extracting actionable insights from research, metrics, and predictive modeling to drive better decisions and outcomes.</strong>
-            </p>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="card h-100 shadow">
-                  <!-- image removed -->
-                <div class="card-body">
-                  <h5 class="card-title">Influencer Staffing Project</h5>
-                  <p class="card-text">Analyzed staffing patterns and their impact on project outcomes. Used survey data, aggregation, and visualization to inform strategic staffing decisions and improve team performance.</p>
-                  <a href="influencer-staffing.html" class="btn btn-primary">View Case Study</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="card h-100 shadow">
-                  <!-- image removed -->
-                <div class="card-body">
-                  <h5 class="card-title">FuturePlay: Predicting Game Sales</h5>
-                  <p class="card-text">Developed predictive models to forecast future game sales using historical data and advanced analytics. Provided actionable insights for marketing and product strategy.</p>
-                  <a href="futureplay-game-sales.html" class="btn btn-primary">View Case Study</a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-      </section>
-
-      <section class="d-flex flex-column justify-content-center align-items-center custom-contact-section">
-        <div class="row align-items-center py-5 w-100">
-          <div class="col-lg-12 d-flex flex-column justify-content-center">
-            <div class="card p-4 text-center ">
-              <h2 id="contact-me" class="mb-3">Contact Me</h2>
-              <p class="custom-about-desc-wide">Feel free to download my resume, reach out via email, or connect on LinkedIn:</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="mx-3 text-center">
-                  <a href="assets/Christof-Gernhardt-Resume.pdf" target="_blank" rel="noopener" class="custom-resume-btn" title="Download Resume">
-                    <i class="fa fa-download fa-2x custom-download-icon" aria-hidden="true" style="visibility: visible;"></i>
-                  </a>
-                  <div class="small mt-1">Resume</div>
-                </div>
-                <div class="mx-3 text-center">
-                  <a href="mailto:christof.gernhardt@gmail.com" class="custom-email-link" title="Email">
-                    <i class="fa fa-envelope fa-2x" aria-hidden="true" style="visibility: visible;"></i>
-                  </a>
-                  <div class="small mt-1">Email</div>
-                </div>
-                <div class="mx-3 text-center">
-                  <a href="https://www.linkedin.com/in/christofgernhardt/" target="_blank" rel="noopener" class="custom-linkedin-link" title="LinkedIn">
-                    <i class="fa fa-linkedin fa-2x" aria-hidden="true" style="visibility: visible;"></i>
-                  </a>
-                  <div class="small mt-1">LinkedIn</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="text-center py-4">
-      <div class="mb-3"></div>
-      <div class="text-center mb-3">
-  <a href="https://app.websitepolicies.com/policies/view/raugx8z8" target="_blank" rel="noopener" class="custom-impressum-link">Impressum</a>
-      </div>
-      <p>&copy; 2025 Chris Gernhardt Portfolio. All rights reserved.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts/main.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  </body>
 </html>
