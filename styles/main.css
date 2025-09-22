@@ -1,3 +1,59 @@
+/* Mobile header improvements */
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 0 18px 0;
+        background: linear-gradient(120deg, #346cbf 60%, #23608a 100%);
+    }
+    .header-img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 18px rgba(52,108,191,0.18);
+        margin-bottom: 18px;
+        margin-top: 0;
+    }
+    .header-content {
+        text-align: center;
+        margin: 0 12px;
+    }
+    .header-title h1 {
+        font-size: 2.1em;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #fff;
+        word-break: break-word;
+    }
+    .header-subtitle {
+        font-size: 1.15em;
+        color: #fff;
+        margin-bottom: 0;
+        word-break: break-word;
+    }
+}
+/* Responsive Navbar for Mobile Devices */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px 0;
+    }
+    .nav a {
+        display: block;
+        padding: 14px 0;
+        font-size: 1.15em;
+        border-bottom: 1px solid #17496a;
+        text-align: center;
+        margin: 0;
+    }
+    .nav a:last-child {
+        border-bottom: none;
+    }
+}
 
 .pm-training-title {
     background: #f9f9f9;
