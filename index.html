@@ -1,147 +1,181 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christof Gernhardt | Product Management Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
-  <div class="header">
-    <img src="images/Christof%20Gernhardt.jpeg" alt="Christof Gernhardt" class="header-img">
+  <header class="header" role="banner">
+    <img src="images/Christof%20Gernhardt.jpeg" alt="Portrait of Christof Gernhardt, Product Manager" class="header-img">
     <div class="header-content">
-  <a href="index.html" class="header-title" style="color:#fff;text-decoration:none;cursor:pointer;">Christof Gernhardt - Product Manager</a>
-      <div class="header-subtitle">Product Manager | SaaS &amp; Data-Driven Strategy</div>
+      <a href="index.html" class="header-title" style="color:#fff;text-decoration:none;cursor:pointer;">
+        <h1>Christof Gernhardt - Product Manager</h1>
+      </a>
+      <h2 class="header-subtitle">Product Manager | SaaS &amp; Data-Driven Strategy</h2>
     </div>
+  </header>
+  <nav class="nav" role="navigation" aria-label="Main Navigation">
+    <a href="index.html">Product Management Portfolio</a>
+    <a href="index.html#data-insights-product-decisions">Data Insights</a>
+    <a href="PM-playbook.html">PM Playbook</a>
+    <a href="index.html#contact">Contact Me</a>
+  </nav>
   </div>
-  <div class="nav">
-    <a href="#" id="pm-modal-trigger-nav">Product Management</a>
-    <a href="#data-insights">Data Insights</a>
-    <a href="#pm-playbook">My PM Playbook</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <div class="section" id="about">
-    <div class="section-title">About Me</div>
-    <div class="about-text">
-      I'm a SaaS professional turned Product Manager, passionate about building products that solve real user problems and drive measurable business outcomes. Based in Berlin, I bring 10+ years of experience at the intersection of operations, strategy, and data, now fully dedicated to creating products that users love.<br><br>
-      What sets me apart is my ability to combine data insights with product strategy: I translate complex analysis into actionable decisions, align stakeholders around a clear vision, and deliver with agile execution. My background in SaaS gives me a deep understanding of how to scale products and balance user needs with business goals.<br><br>
-      I believe in clear communication, empathy, and evidence-based decision-making — creating products that not only serve users but also accelerate growth.
+  <main>
+  <section class="section" id="about">
+    <div class="panel">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-text">
+        I'm a SaaS professional turned Product Manager, passionate about building products that solve real user problems
+        and drive measurable business outcomes. Based in Berlin, I bring 10+ years of experience at the intersection of
+        operations, strategy, and data, now fully dedicated to creating products that users love.<br><br>
+        What sets me apart is my ability to combine data insights with product strategy: I translate complex analysis
+        into actionable decisions, align stakeholders around a clear vision, and deliver with agile execution. My
+        background in SaaS gives me a deep understanding of how to scale products and balance user needs with business
+        goals.<br><br>
+        I believe in clear communication, empathy, and evidence-based decision-making — creating products that not only
+        serve users but also accelerate growth.
+      </div>
+      <h3 class="why-product">Why Product?</h3>
+      <div class="about-text">
+        After years in SaaS, I realized my favorite part of the work wasn’t just running operations — it was shaping
+        <b>what</b> we built and <b>why</b>. Transitioning into product management has allowed me to do exactly that:
+        connect strategy, design, and technology to turn ideas into real solutions. My past roles gave me the analytical
+        rigor and stakeholder management skills; product gives me the canvas to apply them with impact.
+      </div>
     </div>
-    <div class="why-product">Why Product?</div>
-    <div class="about-text">
-      After years in SaaS, I realized my favorite part of the work wasn’t just running operations — it was shaping <b>what</b> we built and <b>why</b>. Transitioning into product management has allowed me to do exactly that: connect strategy, design, and technology to turn ideas into real solutions. My past roles gave me the analytical rigor and stakeholder management skills; product gives me the canvas to apply them with impact.
+  </section>
+
+  <section class="section" id="product-management">
+    <div class="panel">
+      <h2 class="data-insights-title">Product Management Portfolio</h2>
+      <div class="about-text" style="text-align:center;">
+        My product management work centers on defining strategy, aligning stakeholders, and delivering solutions through
+        agile methodologies. I focus on turning user needs and business goals into actionable product outcomes.
+      </div>
+      <div class="section realworld-impact">
+        <h3 class="realworld-title">Real-World Product Impact</h3>
+        <div class="realworld-divider"></div>
+        <div class="realworld-row">
+          <div class="realworld-card">
+            <div class="realworld-card-title">Miro – Onboarding & Learning MVP</div>
+            <div class="realworld-card-desc">Cut new-hire ramp-up time by 30% through discovery, backlog prioritization,
+              and iterative MVP delivery.</div>
+            <a href="miro-onboarding-learning-case-study.html" target="_blank" class="realworld-btn">View Case Study</a>
+          </div>
+          <div class="realworld-card">
+            <div class="realworld-card-title">Miro – Interview Training & Hiring Rubrics</div>
+            <div class="realworld-card-desc">Improved candidate experience and interview quality through global training
+              rollout, redesigned scorecards, and technical rubrics.</div>
+            <a href="miro-interview-training-case-study.html" target="_blank" class="realworld-btn">View Case Study</a>
+          </div>
+          <div class="realworld-card">
+            <div class="realworld-card-title">Doctolib – Support Data &rarr; Product Improvements</div>
+            <div class="realworld-card-desc">Leveraged support data to drive product improvements and enhance user
+              experience.</div>
+            <a href="doctolib-support-case-study.html" target="_blank" class="realworld-btn">View Case Study</a>
+          </div>
+          <div class="realworld-card">
+            <div class="realworld-card-title">Product Impact</div>
+            <div class="realworld-card-desc">Explore how product management decisions drive measurable impact across teams, users, and business outcomes.</div>
+            <a href="product-impact.html" target="_blank" class="realworld-btn">View Product Impact</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="section" id="product-management">
-      <div class="section" style="background:#f9f9f9;color:#23608a;font-weight:bold;text-align:center;padding:18px;margin:30px auto 18px auto;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
-  Product Management Training Projects
-</div>
-        
-     <div class="about-text" style="text-align:center;">
-      My product management work centers on defining strategy, aligning stakeholders, and delivering solutions through agile methodologies. I focus on turning user needs and business goals into actionable product outcomes.
-    </div>
+    <div class="realworld-title">Product Management Training Projects</div>
     <div class="projects-row">
       <div class="project-card">
-        <img src="images/make-your-map/1%20Hero%20Visual%20Placeholder_Hero%20Image.png" alt="MakeYourMap">
+        <img src="images/make-your-map/1%20Hero%20Visual%20Placeholder_Hero%20Image.png" alt="MakeYourMap project hero image" loading="lazy">
         <div class="project-title">MYM: Make my Maps</div>
         <div class="project-label">FEATURE: Similar Address</div>
-        <div class="project-desc">Improving product accuracy by detecting and flagging duplicate or similar entries during address search. Includes user interviews, feature design, PRD, MVP backlog, wireframes.</div>
-  <a href="make-your-map-case-study.html" class="project-btn">View Project</a>
+        <div class="project-desc">Improving product accuracy by detecting and flagging duplicate or similar entries during
+          address search. Includes user interviews, feature design, PRD, MVP backlog, wireframes.</div>
+        <a href="make-your-map-case-study.html" class="project-btn">View Project</a>
       </div>
       <div class="project-card">
-        <img src="images/sync-video-platform/Hero Image Sync.png" alt="Sync Video Platform">
+        <img src="images/sync-video-platform/Hero Image Sync.png" alt="Sync Video Platform project hero image" loading="lazy">
         <div class="project-title">Sync Video Platform</div>
-        <div class="project-desc">A collaborative video platform designed for remote teams to share, annotate, and sync in real time. Focused on seamless user experience, stakeholder alignment, and agile delivery.</div>
-  <a href="sync-video-platform.html" class="project-btn">View Project</a>
+        <div class="project-desc">A collaborative video platform designed for remote teams to share, annotate, and sync in
+          real time. Focused on seamless user experience, stakeholder alignment, and agile delivery.</div>
+        <a href="sync-video-platform.html" class="project-btn">View Project</a>
       </div>
     </div>
-  </div>
-  <div class="section">
-  <div class="section" style="background:#f9f9f9;color:#23608a;font-weight:bold;text-align:center;padding:18px;margin:0 auto 18px auto;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
-      Data Insights for Product Decisions
-    </div>
-    <div class="about-text" style="text-align:center;">
-      Beyond SaaS and Product projects, I built a foundation in data analysis and storytelling. These projects show how I clean, analyze, and visualize data to guide business decisions — a skill I’ve applied in my real-world SaaS work, but I’m showcasing here in these CareerFoundry Training Projects
-    </div>
-    <div class="projects-row">
-      <div class="project-card">
-  <div class="project-title">Influenza Staffing Project</div>
-        <div class="project-desc">Analyzed staffing patterns and their impact on project outcomes. Used survey data, aggregation, and visualization to inform strategic staffing decisions and improve team performance.</div>
-        <a href="influenza-staffing-case-study.html" class="case-btn">View Case Study</a>
-      </div>
-      <div class="project-card">
-        <div class="project-title">FuturePlay: Predicting Game Sales</div>
-        <div class="project-desc">Developed predictive models to forecast future game sales using historical data and advanced analytics. Provided actionable insights for marketing and product strategy.</div>
-        <a href="futureplay-game-sales-case-study.html" class="case-btn">View Case Study</a>
-      </div>
-    </div>
-  </div>
-  <div style="height:40px;"></div>
-  <div class="section contact-section" id="contact" style="margin-left:auto;margin-right:auto;">
-    <div class="contact-title">Contact Me</div>
-    <div>Feel free to download my resume, reach out via email, or connect on LinkedIn:</div>
-    <div class="contact-links">
-      <a class="contact-link" href="assets/Christof-Gernhardt-Resume.pdf" target="_blank">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23608a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h4"/></svg>
-        Resume
-      </a>
-      <a class="contact-link" href="mailto:your.email@example.com">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23608a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
-        Email
-      </a>
-      <a class="contact-link" href="https://www.linkedin.com/in/christofgernhardt/" target="_blank">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23608a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="7" y1="10" x2="7" y2="17"/><line x1="7" y1="7" x2="7" y2="7"/><line x1="12" y1="10" x2="12" y2="17"/><path d="M12 13a2 2 0 1 1 4 0v4"/></svg>
-        LinkedIn
-      </a>
-    </div>
-    <div style="margin-top:18px; font-size:0.98em; color:#23608a;">I'm open to Product Manager roles in SaaS and customer experience. Let's connect.</div>
-  </div>
-  <div class="footer"><a href="https://app.websitepolicies.com/policies/view/raugx8z8" target="_blank" style="color:#fff;text-decoration:underline;">Impressum</a>
-  </div>
-  <!-- Modal for Product Management Info -->
-  <div id="pm-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.18);z-index:1000;">
-  <div id="pm-modal-content" style="max-width:600px;margin:60px auto;background:#fff;border-radius:10px;box-shadow:0 2px 16px rgba(0,0,0,0.12);padding:32px 18px;position:relative;">
-    <button onclick="document.getElementById('pm-modal').style.display='none'" style="position:absolute;top:16px;right:18px;background:none;border:none;font-size:1.5em;cursor:pointer;color:#23608a;">&times;</button>
-    <div style="font-weight:bold;font-size:1.15em;text-align:center;margin-bottom:12px;">Real-World Product Impact</div>
-    <div style="height:8px;background:#f3f3f3;margin-bottom:18px;"></div>
-    <div style="margin-bottom:18px;text-align:center;">
-      <div style="font-weight:bold;">Miro – Onboarding & Learning MVP</div>
-      <div style="font-style:italic;font-size:0.98em;">Cut new-hire ramp-up time by 30% through discovery, backlog prioritization, and iterative MVP delivery.</div>
-      <a href="miro-onboarding-learning-case-study.html" target="_blank" style="display:inline-block;font-weight:bold;margin:10px 0 0 0;color:#fff;background:#23608a;padding:8px 22px;border-radius:5px;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.07);transition:background 0.2s;">View Case Study</a>
-    </div>
-    <div style="margin-bottom:18px;text-align:center;">
-      <div style="font-weight:bold;">Miro – Interview Training & Hiring Rubrics</div>
-      <div style="font-style:italic;font-size:0.98em;">Improved candidate experience and interview quality through global training rollout, redesigned scorecards, and technical rubrics.</div>
-      <a href="miro-interview-training-case-study.html" target="_blank" style="display:inline-block;font-weight:bold;margin:10px 0 0 0;color:#fff;background:#23608a;padding:8px 22px;border-radius:5px;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.07);transition:background 0.2s;">View Case Study</a>
-    </div>
-    <div style="margin-bottom:18px;text-align:center;">
-      <div style="font-weight:normal;">Doctolib – Support Data &rarr; Product Improvements</div>
-      <a href="doctolib-support-case-study.html" target="_blank" style="display:inline-block;font-weight:bold;margin:10px 0 0 0;color:#fff;background:#23608a;padding:8px 22px;border-radius:5px;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.07);transition:background 0.2s;">View Case Study</a>
-    </div>
-    <div style="height:8px;background:#f3f3f3;margin-top:12px;"></div>
-  </div>
-</div>
-  
- <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var triggerNav = document.getElementById('pm-modal-trigger-nav');
-    var modal = document.getElementById('pm-modal');
-    var modalContent = document.getElementById('pm-modal-content');
-    if (triggerNav && modal) {
-      triggerNav.onclick = function(e) {
-        e.preventDefault();
-        modal.style.display = 'block';
-      };
-      // Close modal when clicking outside content
-      modal.onclick = function(e) {
-        if (e.target === modal) {
-          modal.style.display = 'none';
-        }
-      };
-    }
-  });
-</script>
-</body>
+  </section>
 
+  <section class="section" id="data-insights-product-decisions">
+    <div class="panel">
+      <h2 class="data-insights-title">Data Insights for Product Decisions</h2>
+      <div class="about-text" style="text-align:center;">
+        Beyond SaaS and Product projects, I built a foundation in data analysis and storytelling. These projects show
+        how I clean, analyze, and visualize data to guide business decisions — a skill I’ve applied in my real-world
+        SaaS work, but I’m showcasing here in these CareerFoundry Training Projects
+      </div>
+      <div class="projects-row">
+        <div class="project-card">
+          <div class="project-title">Influenza Staffing Project</div>
+          <div class="project-desc">Analyzed staffing patterns and their impact on project outcomes. Used survey data,
+            aggregation, and visualization to inform strategic staffing decisions and improve team performance.</div>
+          <a href="influenza-staffing-case-study.html" class="case-btn">View Case Study</a>
+        </div>
+        <div class="project-card">
+          <div class="project-title">FuturePlay: Predicting Game Sales</div>
+          <div class="project-desc">Developed predictive models to forecast future game sales using historical data
+            and advanced analytics. Provided actionable insights for marketing and product strategy.</div>
+          <a href="futureplay-game-sales-case-study.html" class="case-btn">View Case Study</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact" style="margin-left:auto;margin-right:auto;">
+    <div class="panel">
+      <h2 class="contact-title">Contact Me</h2>
+      <div>Feel free to download my resume, reach out via email, or connect on LinkedIn:</div>
+      <div class="contact-links">
+        <a class="contact-link" href="assets/Christof-Gernhardt-Resume.pdf" target="_blank">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23608a" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M8 7h8M8 11h8M8 15h4" />
+          </svg>
+          Resume
+        </a>
+        <a class="contact-link" href="mailto:your.email@example.com">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23608a" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Email
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/christofgernhardt/" target="_blank">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23608a" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="2" />
+            <line x1="7" y1="10" x2="7" y2="17" />
+            <line x1="7" y1="7" x2="7" y2="7" />
+            <line x1="12" y1="10" x2="12" y2="17" />
+            <path d="M12 13a2 2 0 1 1 4 0v4" />
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+      <div style="margin-top:18px; font-size:0.98em; color:#23608a;">I'm open to Product Manager roles in SaaS and
+        customer experience. Let's connect.</div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo"><a href="https://app.websitepolicies.com/policies/view/raugx8z8" target="_blank"
+    style="color:#fff;text-decoration:underline;">Impressum</a>
+  </footer>
+</main>
+</body>
 </html>
