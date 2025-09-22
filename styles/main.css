@@ -37,7 +37,7 @@
     flex-wrap: wrap;
     gap: 32px;
     justify-content: center;
-    align-items: stretch;
+    align-items: flex-end;
 }
 .realworld-card {
     flex: 1 1 340px;
@@ -128,7 +128,7 @@ body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
 }
 .header-content { flex: 1; }
 .header-title {
-    font-size: 2.2em;
+    font-size: 1.7em;
     font-weight: bold;
     letter-spacing: 0.5px;
     margin-bottom: 8px;
@@ -167,25 +167,16 @@ body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
     color: #ffe066;
 }
 .nav a.active {
-    background: #ffe066;
-    color: #23608a;
+    background: none;
+    color: #ffe066;
     font-weight: bold;
-    box-shadow: 0 2px 8px rgba(52,108,191,0.12);
+    border-bottom: 3px solid #ffe066;
+    box-shadow: none;
     position: relative;
-    border-bottom: none;
 }
 
 .nav a.active::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 8px;
-    right: 8px;
-    bottom: 6px;
-    height: 6px;
-    background: #ffe066;
-    border-radius: 0 0 12px 12px;
-    z-index: 1;
+    content: none;
 }
 .section {
     max-width: 900px;
@@ -220,10 +211,10 @@ body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
 .why-product { text-align: center; font-weight: bold; margin: 18px 0 8px; }
 .projects-title { text-align: center; font-weight: bold; margin: 30px 0 18px; }
 .projects-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
     gap: 32px;
     justify-content: center;
+    align-items: stretch;
     margin-bottom: 32px;
 }
 .project-card {
@@ -237,6 +228,7 @@ body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     transition: box-shadow 0.2s, transform 0.1s;
     cursor: pointer;
 }
@@ -271,7 +263,7 @@ body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
     font-size: 1.08em;
     cursor: pointer;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: auto;
     font-weight: 600;
     box-shadow: 0 2px 12px rgba(52,108,191,0.10);
     transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
@@ -296,15 +288,13 @@ body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
 .contact-link img { width: 32px; height: 32px; margin-bottom: 4px; }
 .footer {
     background: #23608a;
-    color: #fff;
+    color: #ffe066;
     text-align: center;
-    padding: 10px 0;
+    padding: 14px 0 12px 0;
     font-size: 1em;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    z-index: 999;
+    box-shadow: 0 -2px 8px rgba(52,108,191,0.08);
+    position: static;
     box-shadow: 0 -2px 8px rgba(52,108,191,0.08);
 }
 @media (max-width: 900px) { .section { padding: 18px; } .projects-row { flex-direction: column; align-items: center; } .project-card { width: 95%; } }
